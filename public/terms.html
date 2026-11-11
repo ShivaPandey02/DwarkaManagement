@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Terms and Conditions for Dwarka Management services.">
+  <title>Terms &amp; Conditions | Dwarka Management</title>
+  <meta property="og:title" content="Terms & Conditions | Dwarka Management">
+  <meta property="og:description" content="Terms and Conditions for Dwarka Management services.">
+  <meta property="og:image" content="https://dwarka.web.app/assets/logo.png">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Dwarka Management home">
+        <img src="assets/logo.png" alt="Dwarka Management logo" width="256" height="256">
+        <span class="brand-name">Dwarka Management</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="/#pricing">Plans</a>
+        <a href="/#contact">Contact</a>
+        <a href="/risk-disclosure">Risk Disclosure</a>
+        <a href="/privacy">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="legal-page">
+    <div class="container">
+      <article class="legal-card">
+        <p class="subtitle">Legal</p>
+        <h1>Terms &amp; Conditions</h1>
+        <p class="legal-meta">Last updated: <span class="doc-date"></span></p>
+
+        <p>These Terms &amp; Conditions govern your use of the Dwarka Management website and engagement for research and advisory services. By using this site or submitting an inquiry, you agree to these terms.</p>
+
+        <h2>1. About Dwarka Management</h2>
+        <p>Dwarka Management provides research-led capital guidance and related advisory conversations. Contact: <a href="/#contact">contact form</a>.</p>
+
+        <h2>2. Services</h2>
+        <p>Engagement scope, deliverables, and fees are confirmed in writing for each plan (Basic, Smart Basic, or Smart Premium) or custom arrangement. Fees cover research and advisory services and do not guarantee investment outcomes.</p>
+
+        <h2>3. Eligibility</h2>
+        <p>You confirm that you are legally able to enter into a contract and that information you provide is accurate.</p>
+
+        <h2>4. No investment advice or solicitation</h2>
+        <p>Website content and engagement materials are informational. They do not constitute personalised investment advice, brokerage services, or an offer to buy or sell securities unless expressly stated in a separate written agreement.</p>
+
+        <h2>5. Payments</h2>
+        <p>Payments are accepted only in the official business bank account of Dwarka Management. We never ask for payments to personal or individual accounts. See our <a href="/refund-policy">Refund Policy</a> for cancellation and refund terms.</p>
+
+        <h2>6. Acceptable use</h2>
+        <ul>
+          <li>Do not misuse the website or attempt unauthorised access.</li>
+          <li>Do not misrepresent an affiliation with Dwarka Management.</li>
+          <li>We do not provide services through Telegram, WhatsApp groups, or Instagram.</li>
+        </ul>
+
+        <h2>7. Intellectual property</h2>
+        <p>Site content, branding, and materials provided during an engagement remain the property of Dwarka Management unless otherwise agreed in writing.</p>
+
+        <h2>8. Limitation of liability</h2>
+        <p>[Placeholder — insert liability, indemnity, and governing-law clauses approved by counsel.]</p>
+
+        <h2>9. Changes</h2>
+        <p>We may update these terms from time to time. Continued use of the site after changes constitutes acceptance of the updated terms.</p>
+
+        <p class="legal-note"><strong>Important:</strong> This page is a scaffold for compliance review. Replace placeholder sections with language approved by a qualified lawyer or compliance professional before public launch.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> Dwarka Management. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.querySelectorAll(".doc-date").forEach((el) => {
+      el.textContent = new Date().toLocaleDateString("en-IN", { year: "numeric", month: "long", day: "numeric" });
+    });
+  </script>
+</body>
+</html>

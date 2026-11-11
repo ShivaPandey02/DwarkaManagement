@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Risk Disclosure for Dwarka Management research and advisory services.">
+  <title>Risk Disclosure | Dwarka Management</title>
+  <meta property="og:title" content="Risk Disclosure | Dwarka Management">
+  <meta property="og:description" content="Important risk disclosure for Dwarka Management services.">
+  <meta property="og:image" content="https://dwarka.web.app/assets/logo.png">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="disclosure-ticker" role="region" aria-label="Important disclosure">
+    <div class="disclosure-ticker-track">
+      <p class="disclosure-ticker-text">
+        <strong>Investor Alert:</strong>
+        Dwarka Management is a SEBI Research Analyst entity. Pay only via official website methods. We have no association with numbers 9702203826, 9819183763, +91 9321361624, +91 9434963424, +91 8760876635, +91 9553793592, +91 9916049300, +91 8390984206. Unauthorized payments are invalid.
+        <span class="ticker-sep">•</span>
+        <strong>Important Disclosure:</strong>
+        Investment in securities markets is subject to market risk. Dwarka Management does not offer guaranteed profit or fixed-return services. Please read our Risk Disclosure, Terms &amp; Conditions, Privacy Policy, and Refund Policy.
+      </p>
+      <p class="disclosure-ticker-text" aria-hidden="true">
+        <strong>Investor Alert:</strong>
+        Dwarka Management is a SEBI Research Analyst entity. Pay only via official website methods. We have no association with numbers 9702203826, 9819183763, +91 9321361624, +91 9434963424, +91 8760876635, +91 9553793592, +91 9916049300, +91 8390984206. Unauthorized payments are invalid.
+        <span class="ticker-sep">•</span>
+        <strong>Important Disclosure:</strong>
+        Investment in securities markets is subject to market risk. Dwarka Management does not offer guaranteed profit or fixed-return services. Please read our Risk Disclosure, Terms &amp; Conditions, Privacy Policy, and Refund Policy.
+      </p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Dwarka Management home">
+        <img src="assets/logo.png" alt="Dwarka Management logo" width="256" height="256">
+        <span class="brand-name">Dwarka Management</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="/#pricing">Plans</a>
+        <a href="/#contact">Contact</a>
+        <a href="/terms">Terms</a>
+        <a href="/privacy">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="legal-page">
+    <div class="container">
+      <article class="legal-card">
+        <p class="subtitle">Legal</p>
+        <h1>Risk Disclosure</h1>
+        <p class="legal-meta">Last updated: <span class="doc-date"></span></p>
+
+        <p>Investment in securities markets is subject to market risk. Please read this disclosure carefully before engaging Dwarka Management for research or advisory services.</p>
+
+        <h2>1. No guaranteed returns</h2>
+        <p>Dwarka Management does not offer guaranteed profit, fixed-return products, or assured outcomes of any kind. Past performance, illustrations, or case discussions are not indicative of future results.</p>
+
+        <h2>2. Capital at risk</h2>
+        <p>Trading and investing may result in partial or complete loss of capital. You should only allocate capital you can afford to lose and make decisions consistent with your own financial situation and risk tolerance.</p>
+
+        <h2>3. Nature of our services</h2>
+        <p>Any research, analysis, frameworks, or guidance shared by Dwarka Management is for reference and educational discussion only. It is not personalised investment advice, a recommendation to buy or sell securities, or an offer to invest.</p>
+
+        <h2>4. Client responsibility</h2>
+        <p>Execution of any investment or business decision is solely the client's responsibility. Dwarka Management is not responsible for losses arising from actions taken based on discussions, materials, or engagement deliverables.</p>
+
+        <h2>5. Regulatory status</h2>
+        <p>[Placeholder — confirm and insert your regulatory registrations, exemptions, and any required SEBI / other disclosures with your compliance counsel.]</p>
+
+        <h2>6. Related policies</h2>
+        <p>Please also review our <a href="/terms">Terms &amp; Conditions</a>, <a href="/privacy">Privacy Policy</a>, and <a href="/refund-policy">Refund Policy</a> before engaging our services.</p>
+
+        <p class="legal-note"><strong>Important:</strong> This page is a scaffold for compliance review. Replace placeholder sections with language approved by a qualified lawyer or compliance professional before public launch.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> Dwarka Management. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.querySelectorAll(".doc-date").forEach((el) => {
+      el.textContent = new Date().toLocaleDateString("en-IN", { year: "numeric", month: "long", day: "numeric" });
+    });
+  </script>
+</body>
+</html>
