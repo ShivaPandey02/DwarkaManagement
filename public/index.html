@@ -22,7 +22,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20261126-form-rework-4">
+  <link rel="stylesheet" href="style.css?v=20261126-contact-success-fix-1">
 </head>
 <body>
   <div class="disclosure-ticker" role="region" aria-label="Important disclosure">
@@ -346,7 +346,7 @@
         <form id="contactForm" class="contact-form" novalidate>
           <div class="contact-fields-grid">
             <label for="contactName"><span class="field-label-line"><span>Name</span><span class="field-meta">Required</span></span><input id="contactName" name="name" required placeholder="Your name" autocomplete="name"></label>
-            <label for="contactEmail"><span class="field-label-line"><span>Email</span><span class="field-meta">Required</span></span><input id="contactEmail" name="email" type="email" required placeholder="you@email.com" autocomplete="email"></label>
+            <label for="contactEmail"><span class="field-label-line"><span>Email</span><span class="field-meta">Required</span></span><input id="contactEmail" name="email" type="email" pattern="[^\s@]+@[^\s@]+\.[^\s@]{2,}" required placeholder="you@email.com" autocomplete="email"></label>
             <label for="phoneInput"><span class="field-label-line"><span>Phone</span><span class="field-meta">Required</span></span><input name="phone" id="phoneInput" type="tel" required placeholder="+91 98765 43210" autocomplete="tel"></label>
             <label for="contactCompany"><span class="field-label-line"><span>Company</span><span class="field-meta">Optional</span></span><input id="contactCompany" name="company" placeholder="Company name" autocomplete="organization"></label>
             <label class="field-full" for="contactMessage"><span class="field-label-line"><span>How can we help?</span><span class="field-meta">Required</span></span><textarea id="contactMessage" name="message" rows="3" required placeholder="A few sentences about the opportunity or decision"></textarea></label>
@@ -440,6 +440,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="supabase-config.js"></script>
-  <script src="script.js?v=20261126-form-rework"></script>
+  <script src="script.js?v=20261126-contact-success-fix-1"></script>
 </body>
 </html>

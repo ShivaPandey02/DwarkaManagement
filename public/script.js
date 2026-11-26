@@ -127,6 +127,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const openModal = () => {
     if (!modal) return;
 
+    modal.querySelector(".contact-modal-dialog")?.classList.remove("is-success");
+
     modal.hidden = false;
     modal.classList.add("is-open");
     document.body.classList.add("modal-open");
@@ -442,7 +444,9 @@ document.addEventListener("DOMContentLoaded", () => {
           body: { submissionId }
         });
         if (emailError || !emailResult?.ok) {
-          emailWarning = emailResult?.error || emailError?.message || "The enquiry was saved, but the email could not be sent.";
+          // Keep provider and function diagnostics out of the customer-facing UI.
+          console.warn("Enquiry saved, but notification failed", emailResult?.error || emailError);
+          emailWarning = "We couldn’t notify our team by email. Please contact us using the phone or WhatsApp details in the site header to make sure we see your enquiry.";
         }
       } catch (error) {
         if (!submissionSaved && uploadedPaths.length) {
@@ -456,6 +460,7 @@ document.addEventListener("DOMContentLoaded", () => {
       refreshUploadLabels();
 
       form.style.setProperty("display", "none", "important");
+      modal?.querySelector(".contact-modal-dialog")?.classList.add("is-success");
 
       if (title) {
         title.textContent = "Enquiry received";
@@ -463,7 +468,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (description) {
         description.textContent = emailWarning
-          ? `Your enquiry and approval were saved, but the email notification could not be confirmed. ${emailWarning}`
+          ? `Your enquiry and approval were saved. ${emailWarning}`
           : "Your enquiry and approval have been received and emailed to our team. Our team will follow up with you.";
       }
     } catch (error) {

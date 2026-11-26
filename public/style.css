@@ -1396,6 +1396,16 @@ button, .btn, .nav-links a { min-height: 44px; }
   box-shadow: 0 28px 80px rgba(5, 16, 31, .3);
   animation: contactModalIn .2s ease-out both;
 }
+.contact-modal-dialog.is-success {
+  display: block;
+  width: min(100%, 560px);
+  height: auto;
+  max-height: min(90dvh, 420px);
+}
+.contact-modal-dialog.is-success .contact-modal-content {
+  padding: 38px 40px 40px;
+}
+.contact-modal-dialog.is-success .contact-modal-header { margin: 0; }
 @keyframes contactModalIn {
   from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }
@@ -1673,6 +1683,14 @@ body.modal-open { overflow: hidden; }
 @media (max-width: 760px) {
   .contact-modal { padding: 0; }
   .contact-modal-dialog { width: 100%; height: 100dvh; max-height: 100dvh; border: 0; border-radius: 0; }
+  .contact-modal-dialog.is-success {
+    width: min(calc(100% - 32px), 480px);
+    height: auto;
+    max-height: calc(100dvh - 32px);
+    border: 1px solid rgba(16, 29, 50, .1);
+    border-radius: 16px;
+  }
+  .contact-modal-dialog.is-success .contact-modal-content { padding: 32px 24px; }
   .contact-modal-content {
     padding: max(22px, env(safe-area-inset-top)) max(20px, env(safe-area-inset-right)) max(22px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left));
     -ms-overflow-style: none;
