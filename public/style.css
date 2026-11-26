@@ -1721,7 +1721,7 @@ body.modal-open { overflow: hidden; }
   .approval-row { gap: 12px; padding: 12px; }
   .approval-copy { gap: 7px; }
   .signature-field { gap: 7px; }
-  .signature-pad-wrap { height: 64px; }
+  .signature-pad-wrap { height: 152px; }
   .contact-form .btn { width: 100%; min-width: 0; }
   .form-actions { justify-content: stretch; }
 }
@@ -1736,6 +1736,9 @@ body.modal-open { overflow: hidden; }
   .contact-fields-grid { gap: 10px 14px; }
   .contact-form textarea { min-height: 82px; }
   .signature-pad-wrap { height: 60px; }
+}
+@media (max-height: 680px) and (max-width: 760px) {
+  .signature-pad-wrap { height: 136px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .contact-modal-dialog { animation: none; }
