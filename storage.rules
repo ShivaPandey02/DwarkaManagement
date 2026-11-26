@@ -1,0 +1,11 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Uploads are accepted only by the trusted Cloud Function using Admin SDK.
+    // No website visitor can list, read, upload, or delete these files directly.
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}
